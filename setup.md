@@ -1,0 +1,3 @@
+- Install NPM and Node.js: [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]
+- Run 'npm init' to build package
+- Install Sass

@@ -1,0 +1,16 @@
+{
+  "name": "styling-template",
+  "version": "1.0.0",
+  "description": "Starter file for styling a Wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "starter-file",
+    "wordpress",
+    "sass"
+  ],
+  "author": "Darnell Thomas",
+  "license": "ISC"
+}
