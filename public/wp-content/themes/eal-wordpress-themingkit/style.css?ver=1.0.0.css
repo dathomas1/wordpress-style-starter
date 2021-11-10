@@ -400,16 +400,37 @@ h4,
 h5,
 h6 {
   clear: both;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 560px) {
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 p {
   margin-bottom: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 560px) {
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 dfn,
@@ -728,6 +749,21 @@ textarea {
   margin: 0 0 1.5em;
 }
 
+/*Centers elements in the middle of the page for default style */
+.post-thumbnail, .entry-content .wp-audio-shortcode, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), .default-max-width {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 560px) {
+  .post-thumbnail, .entry-content .wp-audio-shortcode, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), .default-max-width {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -915,6 +951,24 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+}
+
+.alignwide {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 860px) {
+  .alignwide {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.alignfull {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css%3Fver=1.0.0.css.map */

@@ -26,3 +26,11 @@
 	margin-bottom: 1.5em;
 }
 
+.alignwide {
+  @include container-max-width($max-width__wide-container);
+}
+
+.alignfull {
+  width: 100%;
+}
+
