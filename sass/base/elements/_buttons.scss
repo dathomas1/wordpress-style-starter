@@ -1,21 +1,41 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"], .wp-block-button__link {
 	border: 1px solid;
 	border-color: $color__border-button;
 	border-radius: 3px;
 	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
+	color: $color__button;
+  cursor: pointer;
 	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+	padding: .667em 1.333em;
 
 	&:hover {
 		border-color: $color__border-button-hover;
+    background-color: $color__background-button-hover;
 	}
 
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
+}
+
+.is-style-outline>.wp-block-button__link, .wp-block-button__link.is-style-outline {
+  border-color: $color__border-button-outlined;
+
+  &:hover {
+    border-color: $color__border-button-outlined-hover;
+  }
+}
+
+/// TODO: Register Round style for block sheet
+
+.is-style-round>.wp-block-button__link, .wp-block-button__link.is-style-round {
+  border-radius: 18px;
+}
+
+.is-style-squared>.wp-block-button__link, .wp-block-button__link.is-style-squared {
+  border-radius: 0;
 }
